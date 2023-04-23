@@ -1,8 +1,8 @@
 ## Table of contents
 1. [Overview](#Overview)
-2. [Set Up](#Set-Up)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
+2. [Installation](#Installation)
+3. [Files And Folder](#Files-And-Folder)
+4. [Endpoints And Output](#Enpoints-And-Output)
 
 
 ### Overview:
@@ -29,9 +29,9 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
    * start	The minimum date for the tradeDateTime field.
    * tradeType	The tradeDetails.buySellIndicator is a BUY or SELL.
 ***
-*** Note :- We have also done pagination and sorting. *** 
+**Note :- We have also done pagination and sorting.  
 
-### Set Up:
+### Installation:
 * Install fastapi and uvicorn to build endpoint and start the server.
  ```bash
 pip install fastapi
@@ -39,15 +39,16 @@ pip install fastapi
 ```bash
 pip install uvicorn
 ```
-* Create main.py and make an app.
-* Then write the command to run the server.
+* Create main.py and make an app and write the command to run the server.
 ```bash
 uvicorn main:app --reload
  ```
 * Set up a mock database on mongdb atlas and then make db.py and insall the mongodb. Connect the mongodb through the url.
 ```bash
-```python -m pip install pymongo
+python -m pip install pymongo
 ```
+### Files And Folder
+
 
  
 <!--  ## Table of Contents
