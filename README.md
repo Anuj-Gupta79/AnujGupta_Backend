@@ -72,8 +72,8 @@ python -m pip install pymongo
 
 
 ## Inputs & Outputs:
-***
-* To insert a mew Trade data:-
+
+* To insert a mew Trade data.
 > ```POST METHOD:- http://localhost:8000/trade/insert```
 ```
 Request:- 
@@ -167,6 +167,30 @@ Response :-
 ]
 ```
 ***
+* To fetch the trade by the tarde_id.
+> ```GET METHOD :-  http://localhost:8000/trades/{trade_id}
+> ``` Request :- http://localhost:8000/trades/789 ```
+```
+Response:-
+{
+  "_id": "6443cd0767b1db1041b1c7de",
+  "asset_class": "Bond",
+  "counterparty": "Morgan Stanley",
+  "instrument_id": "MSFT",
+  "instrument_name": "Microsoft Corp",
+  "trade_date_time": "2023-04-22T12:03:02.563000",
+  "trade_details": {
+    "buySellIndicator": "BUY",
+    "price": 120,
+    "quantity": 50
+  },
+  "trade_id": "789",
+  "trader": "Bobbby Johnson"
+}
+```
+
+***
+
 
 
 
