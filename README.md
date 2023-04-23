@@ -1,11 +1,11 @@
 ## Table of contents
-1. [General Info](#general-info)
+1. [Overview](#Overview)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
 
 
-# Overview:
+### Overview:
 Here, We have build an app using the framework of python i.e. FastApi. The task has given to us. We have given a mock database schema name as 'Trade'. We need to create a mock database server and insert some mock data of 'Trade'.
 
 ***
@@ -24,6 +24,7 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
    • minPrice :-	The minimum value for the tradeDetails.price field.
    • start	The minimum date for the tradeDateTime field.
    • tradeType	The tradeDetails.buySellIndicator is a BUY or SELL.
+***
 
    
 #First Step:-
