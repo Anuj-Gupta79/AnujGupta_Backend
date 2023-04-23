@@ -72,11 +72,11 @@ python -m pip install pymongo
 
 
 ## Inputs/Outputs:
-* To insert a mew Trade data:-
 ***
-```EndPoint -> (POST METHOD) http://localhost:8000/trade/insert```
+* To insert a mew Trade data:-
+```POST METHOD:- http://localhost:8000/trade/insert```
 ```
-Body:- 
+Request:- 
 {
 "assetClass" :"Equity",
 "counterparty" : "Deutsche Bank",
@@ -93,12 +93,84 @@ Body:-
 }
 ```
 ```
-Output:- 
+Response:- 
 {
   "message": "trade insert successfully!"
 }
 ```
 ***
+***
+* To fetching all the trades from the database with pagination.
+```GET METHOD :- http://localhost:8000/trades?page=1&per_page=4 ```
+```
+Response :- 
+[
+  {
+    "_id": "6443cd0767b1db1041b1c7de",
+    "asset_class": "Bond",
+    "counterparty": "Morgan Stanley",
+    "instrument_id": "MSFT",
+    "instrument_name": "Microsoft Corp",
+    "trade_date_time": "2023-04-22T12:03:02.563000",
+    "trade_details": {
+      "buySellIndicator": "BUY",
+      "price": 120,
+      "quantity": 50
+    },
+    "trade_id": "789",
+    "trader": "Bobbby Johnson"
+  },
+  {
+    "_id": "6443cf0267b1db1041b1c7df",
+    "asset_class": "FX",
+    "counterparty": "Citibank",
+    "instrument_id": "USDJPY",
+    "instrument_name": "USD/JPY",
+    "trade_date_time": "2023-04-22T13:11:22.876000",
+    "trade_details": {
+      "buySellIndicator": "SELL",
+      "price": 110.5,
+      "quantity": 100000
+    },
+    "trade_id": "790",
+    "trader": "Alice Smith"
+  },
+  {
+    "_id": "6443cf1267b1db1041b1c7e0",
+    "asset_class": "Bond",
+    "counterparty": "Goldman Sachs",
+    "instrument_id": "AAPL2024",
+    "instrument_name": "Apple Inc. 2024 Bond",
+    "trade_date_time": "2023-04-22T10:54:05.234000",
+    "trade_details": {
+      "buySellIndicator": "BUY",
+      "price": 105.25,
+      "quantity": 50000
+    },
+    "trade_id": "791",
+    "trader": "John Doe"
+  },
+  {
+    "_id": "6443cf1d67b1db1041b1c7e1",
+    "asset_class": "Equity",
+    "counterparty": "J.P. Morgan",
+    "instrument_id": "AMZN",
+    "instrument_name": "Amazon.com Inc",
+    "trade_date_time": "2023-04-22T09:17:43.019000",
+    "trade_details": {
+      "buySellIndicator": "SELL",
+      "price": 3350.75,
+      "quantity": 10
+    },
+    "trade_id": "792",
+    "trader": "Jane Smith"
+  }
+]
+```
+
+***
+
+
 
  
 
