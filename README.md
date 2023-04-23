@@ -74,7 +74,9 @@ python -m pip install pymongo
 ## Inputs & Outputs:
 
 * To insert a mew Trade data.
-> ```POST METHOD:- http://localhost:8000/trade/insert```
+```
+POST METHOD:- http://localhost:8000/trade/insert
+```
 ```
 Request:- 
 {
@@ -100,7 +102,9 @@ Response:-
 ```
 ***
 * To fetching all the trades from the database with pagination.
-> ```GET METHOD :- http://localhost:8000/trades?page=1&per_page=4 ```
+```
+GET METHOD :- http://localhost:8000/trades?page=1&per_page=4 
+```
 ```
 Response :- 
 [
@@ -168,7 +172,9 @@ Response :-
 ```
 ***
 * To fetch the trade by the tarde_id.
-> ``` GET METHOD :-  http://localhost:8000/trades/{trade_id} ```
+``` 
+GET METHOD :-  http://localhost:8000/trades/{trade_id} 
+```
 ``` 
 Request :- http://localhost:8000/trades/789 
 ```
@@ -192,6 +198,64 @@ Response:-
 ```
 
 ***
+* To fetch all the trades on the basis of certain conditons.There is only one query parameter i.e. search you can use it as multiple time as you want by just using & symbol in between. If We don't give any query parameter then our endpoint return a list of all trades. if we given any search parameter, firstly fetch all the trade in a list then check all the condition by using the for loop an find a trade that fullfill the given condtion.Pagination and sorting also present in this endpoint.
+
+``` 
+GET METHOD :-  http://localhost:8000/trades/?search= 
+```
+``` 
+Request :- http://localhost:8000/trades?search=Morgan%20Stanley&page=1&per_page=4
+```
+```
+Response:-
+[
+  {
+    "_id": "6443cd0767b1db1041b1c7de",
+    "asset_class": "Bond",
+    "counterparty": "Morgan Stanley",
+    "instrument_id": "MSFT",
+    "instrument_name": "Microsoft Corp",
+    "trade_date_time": "2023-04-22T12:03:02.563000",
+    "trade_details": {
+      "buySellIndicator": "BUY",
+      "price": 120,
+      "quantity": 50
+    },
+    "trade_id": "789",
+    "trader": "Bobbby Johnson"
+  },
+  {
+    "_id": "6443cf3367b1db1041b1c7e3",
+    "asset_class": "Equity",
+    "counterparty": "Morgan Stanley",
+    "instrument_id": "AAPL",
+    "instrument_name": "Apple Inc",
+    "trade_date_time": "2023-04-22T16:22:34.567000",
+    "trade_details": {
+      "buySellIndicator": "BUY",
+      "price": 140.5,
+      "quantity": 100
+    },
+    "trade_id": "794",
+    "trader": "Sarah Lee"
+  },
+  {
+    "_id": "6443cf9f67b1db1041b1c7e7",
+    "asset_class": "Equity",
+    "counterparty": "Morgan Stanley",
+    "instrument_id": "AMZN",
+    "instrument_name": "Amazon.com Inc",
+    "trade_date_time": "2023-04-22T16:10:00",
+    "trade_details": {
+      "buySellIndicator": "BUY",
+      "price": 3350,
+      "quantity": 10
+    },
+    "trade_id": "990",
+    "trader": "John Doe"
+  }
+]
+```
 
 
 
