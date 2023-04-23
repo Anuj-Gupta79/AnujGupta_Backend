@@ -4,7 +4,7 @@ Overview:
 Here, We have build an app using the framework of python i.e. FastApi. The task has given to us. We have given a mock database schema name as 'Trade'. We need to create a mock database server and insert some mock data of 'Trade'.
 
 # We need to create a endpoint -
--> to fetch all the trades.
+  #to fetch all the trades.
 -> to fetch a trade using the trade_id in path parameter.
 -> to fetch all the trades on the basis of certain conditions like:-
    • counterparty :- Couter party of the trade.
