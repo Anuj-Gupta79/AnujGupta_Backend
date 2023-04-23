@@ -1,6 +1,6 @@
 ## Table of contents
 1. [Overview](#Overview)
-2. [Technologies](#technologies)
+2. [Set Up](#Set-Up)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
 
@@ -15,32 +15,39 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
  2. To fetch a trade using the trade_id in path parameter.
  
  3. To fetch all the trades on the basis of certain conditions like:-
-   ```* counterparty :- Couter party of the trade.
+   * counterparty :- Couter party of the trade.
    * instrumentId :- Instrument Id of the tarde.
    * instrumentName :- Instrument Name of the trade.
    * trader :- Trader Name of the trade.```
    
  4. To fetch all the trades on the basis of advanced filtering i.e :-
  
-   ```* assetClass :- Asset class of the trade.
+   * assetClass :- Asset class of the trade.
    * end :- The maximum date for the tradeDateTime field.
    * maxPrice :- The maximum value for the tradeDetails.price field.
    * minPrice :-	The minimum value for the tradeDetails.price field.
    * start	The minimum date for the tradeDateTime field.
    * tradeType	The tradeDetails.buySellIndicator is a BUY or SELL.
-   ```
 ***
+*** Note :- We have also done pagination and sorting. *** 
 
-   
-#First Step:-
- We create main.py file and install fastapi and uvicorn for building endpoint and start the server.
+### Set Up:
+* Install fastapi and uvicorn to build endpoint and start the server.
  ```bash
-pip install foobar
+pip install fastapi
 ```
- ○ pip install uvicorn
- Then , We create the app and just start the server by writing this command.
- ○ uvicorn main:app --reload
- main is file name of main file i.e. main.py and app is the that we have created and --reload is to start the server  and reload automatically after certain changes in our code.
+```bash
+pip install uvicorn
+```
+* Create main.py and make an app.
+* Then write the command to run the server.
+```bash
+uvicorn main:app --reload
+ ```
+* Set up a mock database on mongdb atlas and then make db.py and insall the mongodb. Connect the mongodb through the url.
+```bash
+```python -m pip install pymongo
+```
 
  
 <!--  ## Table of Contents
