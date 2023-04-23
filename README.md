@@ -168,8 +168,10 @@ Response :-
 ```
 ***
 * To fetch the trade by the tarde_id.
-> ```GET METHOD :-  http://localhost:8000/trades/{trade_id}
-> ``` Request :- http://localhost:8000/trades/789 ```
+> ``` GET METHOD :-  http://localhost:8000/trades/{trade_id} ```
+``` 
+Request :- http://localhost:8000/trades/789 
+```
 ```
 Response:-
 {
