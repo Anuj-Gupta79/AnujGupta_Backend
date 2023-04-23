@@ -21,7 +21,9 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
    
 #First Step:-
  We create main.py file and install fastapi and uvicorn for building endpoint and start the server.
- ○ pip install fastapi
+ ```bash
+pip install foobar
+```
  ○ pip install uvicorn
  Then , We create the app and just start the server by writing this command.
  ○ uvicorn main:app --reload
