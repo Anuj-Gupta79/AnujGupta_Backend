@@ -71,8 +71,8 @@ python -m pip install pymongo
 ## Inputs/Outputs:
 * To insert a mew Trade data:-
 ***
-EndPoint -> (POST METHOD) http://localhost:8000/trade/insert
-Body:- 
+> EndPoint -> (POST METHOD) http://localhost:8000/trade/insert
+> Body:- 
 {
 "assetClass" :"Equity",
 "counterparty" : "Deutsche Bank",
@@ -87,7 +87,7 @@ Body:-
 "tradeId" : "105",
 "trader" : "John Kim"
 }
-Output:- 
+> Output:- 
 {
   "message": "trade insert successfully!"
 }
