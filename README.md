@@ -56,10 +56,16 @@ python -m pip install pymongo
 5. Routers->Trade.py :- Creating the router for the end points.
 
 ## Endpoints:
-1. To fetch allll the tardes:-
-   >Get Request :- This end will fetech all the trade. 
-   ```http://localhost:8000/trades```
-3. To fetch 
+1. To fetch all the tardes:-
+   > Get Request :- ```http://localhost:8000/trades```
+2. To fetch a trade wih the trade_id in path parameter:
+   > Get Request :-  ```http://localhost:8000/trades/789```
+3. To fetch list of trades on the basis of certain conditions:-  
+   > Get Request :-
+4. To fetch list of trades on the basis of advanced filtering:-
+  > Get Request :- 
+5. To insert the trade data inside the mongodb database:
+   > Post Request :- ```http://localhost:8000/trade/insert```
 
  
 
