@@ -1,11 +1,11 @@
-## Table of contents
+# Table of contents
 1. [Overview](#Overview)
 2. [Installation](#Installation)
 3. [Files And Folder](#Files-And-Folder)
 4. [Endpoints And Output](#Enpoints-And-Output)
 
 
-### Overview:
+## Overview:
 Here, We have build an app using the framework of python i.e. FastApi. The task has given to us. We have given a mock database schema name as 'Trade'. We need to create a mock database server and insert some mock data of 'Trade'.
 
 ***
@@ -29,9 +29,9 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
    * start	The minimum date for the tradeDateTime field.
    * tradeType	The tradeDetails.buySellIndicator is a BUY or SELL.
 ***
-**Note :- We have also done pagination and sorting.  
+**Note :- We have also done pagination and sorting.**  
 
-### Installation:
+## Installation:
 * Install fastapi and uvicorn to build endpoint and start the server.
  ```bash
 pip install fastapi
@@ -47,8 +47,8 @@ uvicorn main:app --reload
 ```bash
 python -m pip install pymongo
 ```
-### Files And Folder:
-**main.py :- Set up of the server.**
+## Files And Folder:
+** 1. main.py :- Set up of the server.**
 
 
  
