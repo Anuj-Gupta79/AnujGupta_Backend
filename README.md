@@ -1,4 +1,9 @@
-<!-- ## AnujGupta_Backend
+## Table of contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+
 
 # Overview:
 Here, We have build an app using the framework of python i.e. FastApi. The task has given to us. We have given a mock database schema name as 'Trade'. We need to create a mock database server and insert some mock data of 'Trade'.
@@ -30,9 +35,9 @@ pip install foobar
  Then , We create the app and just start the server by writing this command.
  ○ uvicorn main:app --reload
  main is file name of main file i.e. main.py and app is the that we have created and --reload is to start the server  and reload automatically after certain changes in our code.
- -->
+
  
- ## Table of Contents
+<!--  ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
@@ -81,3 +86,4 @@ Answer to the third question with *italic words*.
 | Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
 |:--------------|:-------------:|--------------:|
 | text-align left | text-align center | text-align right |
+ -->
