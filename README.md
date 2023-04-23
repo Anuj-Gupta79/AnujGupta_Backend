@@ -3,7 +3,7 @@
 2. [Installation](#Installation)
 3. [Files And Folder](#Files-And-Folder)
 4. [Endpoints](#Enpoints)
-5. [Outputs](#Outputs)
+5. [Inputs/Outputs](#Inputs/Outputs)
 
 
 ## Overview:
@@ -61,11 +61,37 @@ python -m pip install pymongo
 2. To fetch a trade wih the trade_id in path parameter:
    > Get Request :-  ```http://localhost:8000/trades/789```
 3. To fetch list of trades on the basis of certain conditions:-  
-   > Get Request :-
+   > Get Request :-  ```http://localhost:8000/trades?search=Morgan%20Stanley&page=1&per_page=5```
 4. To fetch list of trades on the basis of advanced filtering:-
-  > Get Request :- 
+  > Get Request :-  ```http://localhost:8000/advancedFiltering/trades?asset_class=Equity&max_price=150&page=1&per_page=10```
 5. To insert the trade data inside the mongodb database:
    > Post Request :- ```http://localhost:8000/trade/insert```
+** NOTE :- Pagination and Sorting has been done. Default page_index i.e. 1 and page_size i.e. 5 has been given. But you can change by giving in the query parameter. Defaulting sorting parameter is none. you can enter sorting parameter and you get  trades according to that parameter. **
+
+## Inputs/Outputs:
+* To insert a mew Trade data:-
+***
+EndPoint -> (POST METHOD) http://localhost:8000/trade/insert
+Body:- 
+{
+"assetClass" :"Equity",
+"counterparty" : "Deutsche Bank",
+"instrumentId" : "TSLA",
+"instrumentName" :"Tesla Inc",
+"tradeDateTime": "2023-04-22T18:15:32.563Z",
+"tradeDetails" : {
+"buySellIndicator" : "BUY",
+"price" : 750.0,
+"quantity" : 10
+},
+"tradeId" : "105",
+"trader" : "John Kim"
+}
+Output:- 
+{
+  "message": "trade insert successfully!"
+}
+***
 
  
 
