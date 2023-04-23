@@ -2,8 +2,8 @@
 1. [Overview](#Overview)
 2. [Installation](#Installation)
 3. [Files And Folder](#Files-And-Folder)
-4. [Endpoints](#Enpoints)
-5. [Inputs/Outputs](#Inputs/Outputs)
+4. [Endpoints](#Endpoints)
+5. [Inputs & Outputs](#Inputs-&-Outputs)
 
 
 ## Overview:
@@ -74,7 +74,7 @@ python -m pip install pymongo
 ## Inputs/Outputs:
 ***
 * To insert a mew Trade data:-
-```POST METHOD:- http://localhost:8000/trade/insert```
+> ```POST METHOD:- http://localhost:8000/trade/insert```
 ```
 Request:- 
 {
@@ -99,9 +99,8 @@ Response:-
 }
 ```
 ***
-***
 * To fetching all the trades from the database with pagination.
-```GET METHOD :- http://localhost:8000/trades?page=1&per_page=4 ```
+> ```GET METHOD :- http://localhost:8000/trades?page=1&per_page=4 ```
 ```
 Response :- 
 [
