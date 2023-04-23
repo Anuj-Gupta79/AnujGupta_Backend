@@ -2,7 +2,8 @@
 1. [Overview](#Overview)
 2. [Installation](#Installation)
 3. [Files And Folder](#Files-And-Folder)
-4. [Endpoints And Output](#Enpoints-And-Output)
+4. [Endpoints](#Enpoints)
+5. [Outputs](#Outputs)
 
 
 ## Overview:
@@ -39,7 +40,7 @@ pip install fastapi
 ```bash
 pip install uvicorn
 ```
-* Create main.py and make an app and write the command to run the server.
+* Create main.py and make an app and write the command to run the server.Server is running on http://localhost:8000
 ```bash
 uvicorn main:app --reload
  ```
@@ -48,57 +49,17 @@ uvicorn main:app --reload
 python -m pip install pymongo
 ```
 ## Files And Folder:
-** 1. main.py :- Set up of the server.**
+1. main.py :- Set up of the server.
+2. Config->db.py :- Set up the mongodb database.
+3. Model->Trade.py :- Write the schema for the trade.
+4. Model->TradeDetails.py :- Write the schema for the trade details.
+5. Routers->Trade.py :- Creating the router for the end points.
 
+## Endpoints:
+1. To fetch allll the tardes:-
+   >Get Request :- This end will fetech all the trade. 
+   ```http://localhost:8000/trades```
+3. To fetch 
 
  
-<!--  ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-### General Info
-***
-Write down general information about your project. It is a good idea to always put a project status in the readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
-## Technologies
-***
-A list of technologies used within the project:
-* [Technology name](https://example.com): Version 12.3 
-* [Technology name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> Should it encompass several lines?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer to the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question, we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer to the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
- -->
+
