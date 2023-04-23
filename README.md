@@ -71,7 +71,7 @@ python -m pip install pymongo
 *** NOTE :- Pagination and Sorting has been done. Default page_index i.e. 1 and page_size i.e. 5 has been given. But you can change by giving in the query parameter. Defaulting sorting parameter is none. you can enter sorting parameter and you get  trades according to that parameter. ***
 
 
-## Inputs/Outputs:
+## Inputs & Outputs:
 ***
 * To insert a mew Trade data:-
 > ```POST METHOD:- http://localhost:8000/trade/insert```
@@ -166,7 +166,6 @@ Response :-
   }
 ]
 ```
-
 ***
 
 
