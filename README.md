@@ -47,7 +47,8 @@ uvicorn main:app --reload
 ```bash
 python -m pip install pymongo
 ```
-### Files And Folder
+### Files And Folder:
+**main.py :- Set up of the server.
 
 
  
