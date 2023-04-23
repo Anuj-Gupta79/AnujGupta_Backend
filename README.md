@@ -15,18 +15,20 @@ Here, We have build an app using the framework of python i.e. FastApi. The task 
  2. To fetch a trade using the trade_id in path parameter.
  
  3. To fetch all the trades on the basis of certain conditions like:-
-      * counterparty :- Couter party of the trade.
+   ```* counterparty :- Couter party of the trade.
    * instrumentId :- Instrument Id of the tarde.
    * instrumentName :- Instrument Name of the trade.
-   * trader :- Trader Name of the trade.
+   * trader :- Trader Name of the trade.```
+   
  4. To fetch all the trades on the basis of advanced filtering i.e :-
  
-   * assetClass :- Asset class of the trade.
+   ```* assetClass :- Asset class of the trade.
    * end :- The maximum date for the tradeDateTime field.
    * maxPrice :- The maximum value for the tradeDetails.price field.
    * minPrice :-	The minimum value for the tradeDetails.price field.
    * start	The minimum date for the tradeDateTime field.
    * tradeType	The tradeDetails.buySellIndicator is a BUY or SELL.
+   ```
 ***
 
    
