@@ -63,16 +63,20 @@ python -m pip install pymongo
 3. To fetch list of trades on the basis of certain conditions:-  
    > Get Request :-  ```http://localhost:8000/trades?search=Morgan%20Stanley&page=1&per_page=5```
 4. To fetch list of trades on the basis of advanced filtering:-
-  > Get Request :-  ```http://localhost:8000/advancedFiltering/trades?asset_class=Equity&max_price=150&page=1&per_page=10```
+   > Get Request :-  ```http://localhost:8000/advancedFiltering/trades?asset_class=Equity&max_price=150&page=1&per_page=10```
 5. To insert the trade data inside the mongodb database:
    > Post Request :- ```http://localhost:8000/trade/insert```
-** NOTE :- Pagination and Sorting has been done. Default page_index i.e. 1 and page_size i.e. 5 has been given. But you can change by giving in the query parameter. Defaulting sorting parameter is none. you can enter sorting parameter and you get  trades according to that parameter. **
+
+
+*** NOTE :- Pagination and Sorting has been done. Default page_index i.e. 1 and page_size i.e. 5 has been given. But you can change by giving in the query parameter. Defaulting sorting parameter is none. you can enter sorting parameter and you get  trades according to that parameter. ***
+
 
 ## Inputs/Outputs:
 * To insert a mew Trade data:-
 ***
 ```EndPoint -> (POST METHOD) http://localhost:8000/trade/insert```
-```Body:- 
+```
+Body:- 
 {
 "assetClass" :"Equity",
 "counterparty" : "Deutsche Bank",
@@ -86,12 +90,14 @@ python -m pip install pymongo
 },
 "tradeId" : "105",
 "trader" : "John Kim"
-}```
-```Output:- 
+}
+```
+```
+Output:- 
 {
   "message": "trade insert successfully!"
 }
-````
+```
 ***
 
  
