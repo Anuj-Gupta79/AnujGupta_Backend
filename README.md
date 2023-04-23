@@ -9,15 +9,15 @@
 Here, We have build an app using the framework of python i.e. FastApi. The task has given to us. We have given a mock database schema name as 'Trade'. We need to create a mock database server and insert some mock data of 'Trade'.
 
 ***
- We need to create a endpoint -
-->  to fetch all the trades.
--> to fetch a trade using the trade_id in path parameter.
--> to fetch all the trades on the basis of certain conditions like:-
+ We need to create following endpoints 
+ * to fetch all the trades.
+ * to fetch a trade using the trade_id in path parameter.
+ * to fetch all the trades on the basis of certain conditions like:-
    • counterparty :- Couter party of the trade.
    • instrumentId :- Instrument Id of the tarde.
    • instrumentName :- Instrument Name of the trade.
    • trader :- Trader Name of the trade.
--> to fetch all the trades on the basis of advanced filtering i.e :-
+ * to fetch all the trades on the basis of advanced filtering i.e :-
    • assetClass :- Asset class of the trade.
    • end :- The maximum date for the tradeDateTime field.
    • maxPrice :- The maximum value for the tradeDetails.price field.
