@@ -3,7 +3,7 @@
 2. [Installation](#Installation)
 3. [Files And Folder](#Files-And-Folder)
 4. [Endpoints](#Endpoints)
-5. [Inputs & Outputs](#Inputs-&-Outputs)
+5. [Inputs Outputs](#Inputs-Outputs)
 
 
 ## Overview:
@@ -73,7 +73,7 @@ NOTE :- Pagination and Sorting has been done. Default page_index i.e. 1 and page
 ***
 
 
-## Inputs & Outputs:
+## Inputs Outputs:
 
 * To insert a mew Trade data.
 ```
